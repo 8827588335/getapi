@@ -1,0 +1,36 @@
+<h1>Create Model With Sequelize in Customer(API:- APPLICATION PROGRAMMING INTERFACE) </h1>
+
+<form #simpleForm="ngForm" (ngSubmit)="postUserFormData(simpleForm.value)">
+    <input type="text" ngModel name="id" placeholder="id"><br><br>
+    <input type="text" ngModel name="fname" placeholder="name"><br><br>
+    <input type="text" ngModel name="city" placeholder="city"><br><br>
+    <input type="text" ngModel name="mobile" placeholder="mobile"><br><br>
+    <input type="text" ngModel name="occupation" placeholder="occupation"><br><br>
+    <button>submit</button>     
+  </form>
+  <br>
+  <button (click)="updatequery(simpleForm.value)">Update</button>
+  <br>
+  <br>
+  
+  <table  border="1">
+      <tr>
+          <th>id</th>
+          <td>fname</td>
+          <td>city</td>
+          <td>mobile</td>
+          <td>occupation</td>
+          <td>Action</td>
+      </tr>
+      <tr *ngFor="let user of customer">
+          <td>{{user.id}}</td>
+          <td>{{user.fname}}</td>
+          <td>{{user.city}}</td>
+          <td>{{user.mobile}}</td>
+          <td>{{user.occupation}}</td>
+          <button (click)="delete(user.id)">delete</button>
+      </tr>
+   </table>
+   <button (click)="getallusers()">Get Data</button>
+   
+

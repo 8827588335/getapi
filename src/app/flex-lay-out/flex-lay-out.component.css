@@ -1,0 +1,35 @@
+.cbox
+{
+    border: 3px solid;
+    height: 570px;
+}
+
+.dbox{
+    border: 3px solid;
+
+    height: 50px;
+    background-color: orange;
+}
+.ebox
+{
+    border: 3px solid;
+    height: 308px;
+    background-color: aqua;
+
+}
+.fbox
+{
+    border: 3px solid;
+    height: 150px;
+    background-color: lightblue;
+}
+.gbox
+{
+    border: 3px solid;
+    height: 58px;
+    background-color: yellowgreen;
+}
+.i
+{
+    text-align: center;
+}

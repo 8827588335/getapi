@@ -1,0 +1,33 @@
+<h1>GET APPLICATION PROGRAMMING INTERFACE</h1>
+<div>
+<form #simpleForm="ngForm" (ngSubmit)="postUserFormData(simpleForm.value)">
+  <input type="text" ngModel name="id" placeholder="id"><br><br>
+  <input type="text" ngModel name="name" placeholder="name"><br><br>
+  <input type="text" ngModel name="email" placeholder="email"><br><br>
+  <input type="text" ngModel name="phone" placeholder="phone"><br><br>
+  <button>submit</button>     
+</form>
+<br>
+<button (click)="updatequery(simpleForm.value)">Update</button>
+<br>
+<br>
+
+<table  border="1">
+    <tr>
+        <th>id</th>
+        <td>name</td>
+        <td>email</td>
+        <td>phone</td>
+        <td>Action</td>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <button (click)="delete(user.id)">delete</button>
+    </tr>
+ </table>
+ <button (click)="getallusers()">Get Data</button>
+</div>
+ 

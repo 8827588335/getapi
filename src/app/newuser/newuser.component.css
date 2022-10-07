@@ -1,0 +1,16 @@
+h1{
+    background-color: rgb(154, 32, 178);
+    border: 2px double;
+}
+div{
+    margin-left: 5%;
+}
+input{
+    background-color: lightpink;
+}
+button{
+    background-color: red;
+}
+tr{
+    background-color: lightblue;
+}

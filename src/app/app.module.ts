@@ -8,6 +8,7 @@ import { UsersComponent } from './users/users.component';
 import { NewuserComponent } from './newuser/newuser.component';
 import { CustomerComponent } from './customer/customer.component';
 import { FlexLayOutComponent } from './flex-lay-out/flex-lay-out.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FlexLayOutComponent } from './flex-lay-out/flex-lay-out.component';
     UsersComponent,
     NewuserComponent,
     CustomerComponent,
-    FlexLayOutComponent
+    FlexLayOutComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,

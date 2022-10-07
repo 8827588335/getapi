@@ -2,15 +2,25 @@
 <form [formGroup]="form">
 
     <div>
-      <label>Username</label>
+      <label>First Name</label>
       <input type="text" class="forms-control" formControlName="name">
         <div *ngIf="submitted && form.controls['name'].invalid && form.controls['name'].touched" class="text-danger">
           <small *ngIf="submitted && form.controls['name'].errors && form.controls['name'].errors['required']">Name is required</small>
         </div>
     </div>
     <br>
+    
     <div>
-      <label>EmailId</label>
+      <label>Last Name</label>
+      <input type="text" class="forms-control" formControlName="name">
+        <div *ngIf="submitted && form.controls['name'].invalid && form.controls['name'].touched" class="text-danger">
+          <small *ngIf="submitted && form.controls['name'].errors && form.controls['name'].errors['required']">Name is required</small>
+        </div>
+    </div>
+    <br>
+
+    <div>
+      <label>Email Id</label>
       <input type="text" class="forms-control" formControlName="email">
       <div *ngIf="submitted && form.controls['email'].invalid && form.controls['email'].touched" class="text-danger">
         <small *ngIf="submitted && form.controls['email'].errors && form.controls['email'].errors['required']">email is required</small>
